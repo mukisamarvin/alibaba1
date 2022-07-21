@@ -25,14 +25,14 @@ class _MyappState extends State<Myapp> {
               Container(
                 width: width,
                 height: height*0.45,
-                child: Image.asset('assets/yoga.png',fit: BoxFit.fill,),
+                child: Image.asset('assets/shop.jpg',fit: BoxFit.fill,),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text('Login',style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold),),
+                    Text('Login',style: TextStyle(fontSize: 30.0,fontWeight: FontWeight.bold),),
                   ],
                 ),
               ),
@@ -63,7 +63,7 @@ class _MyappState extends State<Myapp> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Forget password?',style: TextStyle(fontSize: 12.0),),
+                    Text('Forgot password?',style: TextStyle(fontSize: 12.0),),
                     RaisedButton(
                       child: Text('Login'),
                       color: Color(0xffEE7B23),
@@ -82,7 +82,7 @@ class _MyappState extends State<Myapp> {
                     text: 'Don\'t have an account',
                     children: [
                       TextSpan(
-                        text: 'Signup',
+                        text: ' Signup',
                         style: TextStyle(
                           color: Color(0xffEE7B23)
                         ),
@@ -149,6 +149,7 @@ class _SecondState extends State<Second> {
                 obscureText: true,
                 decoration: InputDecoration(
                   hintText: 'Password',
+
                   suffixIcon: Icon(Icons.visibility_off),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20.0),
